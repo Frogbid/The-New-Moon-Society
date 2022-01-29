@@ -26,7 +26,7 @@ body {
     margin: 0 auto;
     padding: 2em;
     gap: 2em;
-    counter-reset: ol-cards-counter;
+    counter-reset: ol-cards-counter 9;
 }
 
 .ol-cards li {
@@ -38,7 +38,7 @@ body {
     row-gap: 0.5em;
     column-gap: 2em;
     box-shadow: 0.5em 0.5em 1em rgb(0 0 0), inset 0.05em 0.05em rgb(50 50 50);
-    counter-increment: ol-cards-counter;
+    counter-increment: ol-cards-counter -1;
     text-align: left;
     background-color: var(--ol-cards-color-bg);
 }
@@ -121,7 +121,7 @@ body {
 }
 .ol-cards li .content {
     grid-area: content;
-    font-size: 0.9em;
+    font-size: 1.5em;
 }
 
 @media only screen and (max-width: 500px) {
